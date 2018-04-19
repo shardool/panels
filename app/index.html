@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendor/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="vendor/angular-material-expansion-panel/dist/md-expansion-panel.min.css">
+    <title>Document</title>
+</head>
+<body>
+            <md-expansion-panel md-component-id="panelOne">
+                    <md-expansion-panel-collapsed>
+                      <div class="md-title">Title</div>
+                      <div class="md-summary">Summary</div>
+                      <md-expansion-panel-icon></md-expansion-panel-icon>
+                    </md-expansion-panel-collapsed>
+                    <md-expansion-panel-expanded>
+                      <md-expansion-panel-header>
+                        <div class="md-title">Expanded Title</div>
+                        <div class="md-summary">Expanded Summary</div>
+                        <md-expansion-panel-icon></md-expansion-panel-icon>
+                      </md-expansion-panel-header>
+                      <md-expansion-panel-content>
+                        <h4>Content</h4>
+                        <p>Put content in here</p>
+                      </md-expansion-panel-content>
+                   
+                      <md-expansion-panel-footer>
+                        <div flex></div>
+                        <md-button class="md-warn" ng-click="$panel.collapse()">Collapse</md-button>
+                      </md-expansion-panel-footer>
+                   
+                    </md-expansion-panel-expanded>
+                   
+                  </md-expansion-panel>
+    
+    <script src="vendor/angular/angular.min.js" type="text/javascript"></script>
+    <script src="vendor/angular-animate/angular-animate.min.js" type="text/javascript"></script>
+    <script src="vendor/angular-aria/angular-aria.min.js" type="text/javascript"></script>
+    <script src="vendor/angular-messages/angular-messages.min.js" type="text/javascript"></script>
+    <script src="vendor/angular-material/angular-material.min.js" type="text/javascript"></script>
+    <script src="vendor/angular-material-expansion-panel/dist/md-expansion-panel.min.js" type="text/javascript"></script>
+    <script>
+        angular.module('myApp', ['ngMaterial','material.components.expansionPanels']);
+        angular.element(document).ready(function(){
+            angular.bootstrap(document, ['myApp']);
+        });
+    </script>
+</body>
+</html>

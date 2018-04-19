@@ -1,0 +1,20 @@
+{
+  "name": "panels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bower:init": "bower init",
+    "bower:install": "bower install",
+    "server": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.4",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}
